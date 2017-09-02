@@ -46,7 +46,7 @@
 				var formattedSkills = HTMLskills.replace("%data%", element);
 				//console.log(element);
 				$('#skills').append(formattedSkills);
-			})
+			});
 		}
 	};
 	var education = {
@@ -92,7 +92,7 @@
 				appendWithTemplate(educationEntry,HTMLonlineURL,e.url);
 				appendWithTemplate(educationEntry,HTMLschoolLocation,e.location);
 				appendWithTemplate(educationEntry,HTMLschoolMajor,e.majors);
-			})
+			});
 
 			var educationEntryOnline =  $(HTMLonlineClasses);
 			$('#education').append(educationEntryOnline);
@@ -105,7 +105,7 @@
 
 				educationEntryOnline.append(formattedOnlineTitle + formattedOnlineSchool);
 				educationEntryOnline.append(formattedOnlineDates,formattedOnlineURL);
-			})
+			});
 		}
 	};
 
@@ -134,12 +134,7 @@
 		],
 		display: function() {
 
-
-			// //Declare b inside of a.
-			// display.projects(workEntry,template,value);
-
 			this.jobs.forEach(function(e) {
-				//console.log(e);
 				var formattedEmployer = HTMLworkEmployer.replace("%data%", e.employer);
 				var formattedTitle  = HTMLworkTitle.replace("%data%", e.title);
 				
@@ -150,7 +145,7 @@
 				appendWithTemplate(workEntry,HTMLworkDates,e.dates);
 				appendWithTemplate(workEntry, HTMLworkLocation, e.location);
 				appendWithTemplate(workEntry, HTMLworkDescription, e.description);
-			})
+			});
 		}
 	};
 
@@ -178,23 +173,21 @@
 			var projectEntry = $(HTMLprojectStart);
 			$('#projects').append(projectEntry);
 
-
-
 			this.projects.forEach(function(e){
 				//console.log(e);
 				appendWithTemplate(projectEntry,HTMLprojectTitle, e.title);
 				appendWithTemplate(projectEntry,HTMLprojectDates, e.dates);
 				appendWithTemplate(projectEntry,HTMLprojectDescription, e.description);
 				appendWithTemplate(projectEntry,HTMLprojectImage, e.images);
-			})
+			});
 		}
 	};
 
 	var array = [bio,education,work,projects];
+	
 	array.forEach(function(elem){
 		elem.display();
-		//console.log(elem);
-	})
+	});
 
 //map
 
