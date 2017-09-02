@@ -1,0 +1,345 @@
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #555;
+
+}
+
+
+p {
+  font-size: 14px;
+  color: #333;
+  line-height: 21px;
+
+}
+
+
+h1 {
+  font-size: 40px;
+  line-height: 48px;
+  display: inline;
+
+}
+
+
+h2 {
+  font-size: 24px;
+  line-height: 29px;
+
+}
+
+
+h3 {
+  font-size: 15px;
+  line-height: 22px;
+
+}
+
+
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+
+}
+
+
+h2,
+h3,
+h4,
+h5 {
+  padding: 40px 5% 10px;
+
+}
+
+
+ul {
+  list-style-type: none;
+
+}
+
+
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d4e4ef+0,86aecc+100;Grey+Gloss */
+  background: rgb(212,228,239);
+   /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%); 
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(212,228,239,1) 0%,rgba(134,174,204,1) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(212,228,239,1) 0%,rgba(134,174,204,1) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc',GradientType=0 );
+  /* IE6-9 */
+
+}
+
+
+#main {
+  max-width: 960px;
+  margin: auto;
+
+}
+
+
+/* Header */
+
+#header {
+  padding-bottom: 10px;
+  overflow: hidden;
+
+}
+
+
+#header:after {
+  clear: both;
+
+}
+
+
+#name {
+  font-weight: 400;
+
+}
+
+
+.welcome-message {
+  font-style: italic;
+  font-size: 30px;
+  line-height: 40px;
+
+}
+
+
+.biopic {
+  float: left;
+  width: 240px;
+  display: none;
+  margin-right: 10px;
+
+}
+
+
+.orange-text {
+  opacity: 0.8;
+
+}
+
+
+.center-content {
+  padding: 2.5% 5%;
+
+}
+
+
+h1 + span {
+  text-align: left;
+  font-weight: 700;
+  display: block;
+  float: right;
+  line-height: 48px;
+
+}
+
+
+hr {
+  clear: both;
+
+}
+
+
+.clear-fix {
+  overflow: auto;
+
+}
+
+
+/* Content */
+
+.education-entry,
+.work-entry,
+.project-entry {
+  padding: 0 5%;
+
+}
+
+.date-text {
+  font-style: italic;
+  font-size: 14px;
+  float: left;
+
+}
+
+
+.location-text {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 16px;
+  float: right;
+
+}
+
+
+a {
+  color: black;
+  font-weight: normal;
+  text-decoration: none;
+  margin-top: 20px;
+  display: block;
+
+}
+
+
+a:hover {
+  color: #555;
+
+}
+
+
+#skills-h3 {
+  display: none;
+
+}
+
+.white-text {
+  font-weight: bold;
+  padding: 5px;
+
+}
+
+
+.gray {
+  padding-bottom: 10px;
+  clear: both;
+
+}
+
+
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px 5% 20px;
+
+}
+
+
+.flex-item {
+  display: inline-block;
+
+}
+
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+}
+
+
+img {
+  padding: 10px 10px 10px 0 ;
+  width: 30%;
+
+}
+
+
+/* Footer */
+
+#lets-connect {
+  text-align: center;
+
+}
+
+
+/* Media queries to handle various device widths */
+
+@media only screen and (max-width: 1024px) {
+  #lets-connect {
+    margin-top: 5%;
+
+  }
+
+}
+
+
+@media only screen and (max-width:900px) {
+  .biopic {
+    width: 275px;
+
+  }
+  .flex-box {
+    padding-bottom: 30px;
+
+  }
+
+
+}
+
+
+@media only screen and (max-width: 750px) {
+  h2 {
+    padding-top: 15px;
+
+  }
+
+  #lets-connect {
+    margin-top: 10%;
+
+  }
+
+  .biopic {
+    width: 170px;
+    display: inline;
+    margin-right:0;
+
+  }
+
+  .welcome-message {
+    display: none;
+
+  }
+
+}
+
+@media only screen and (min-width: 750px) {
+  #skills-h3,
+  .biopic {
+    display: block;
+
+  }
+
+}
+
+
+/* Google map */
+
+#map {
+  display: block;
+  height: 100%;
+  margin: 0 5%;
+
+}
+
+
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+
+}
